@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An HTML5 page demonstrating lists, tables, media, and a complete form with validation features.">
+  <title>Enhanced HTML5 Content & Forms</title>
+</head>
+<body>
+  <!-- Page Header -->
+  <header>
+    <h1>Enhanced HTML5 Content & Mastering Forms</h1>
+    <p>This page demonstrates the use of lists, tables, media, and a well-structured form with accessibility and validation features.</p>
+  </header>
+
+  <!-- Section: Lists -->
+  <section>
+    <h2>Key Features of HTML5 Forms</h2>
+    <ul>
+      <li>Improved input types (email, number, date, etc.)</li>
+      <li>Built-in validation without JavaScript</li>
+      <li>Attributes like <code>placeholder</code>, <code>required</code>, and <code>autocomplete</code></li>
+      <li>Accessibility through semantic tags and labels</li>
+    </ul>
+  </section>
+
+  <!-- Section: Table -->
+  <section>
+    <h2>Sample Table: Browser Support for Input Types</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <caption>Browser support overview</caption>
+      <thead>
+        <tr>
+          <th>Input Type</th>
+          <th>Chrome</th>
+          <th>Firefox</th>
+          <th>Safari</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Email</td>
+          <td>✔</td>
+          <td>✔</td>
+          <td>✔</td>
+        </tr>
+        <tr>
+          <td>Date</td>
+          <td>✔</td>
+          <td>✔</td>
+          <td>✖</td>
+        </tr>
+        <tr>
+          <td>Color</td>
+          <td>✔</td>
+          <td>✔</td>
+          <td>✔</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section: Media -->
+  <section>
+    <h2>Media Example</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Placeholder image demonstrating media embedding">
+      <figcaption>A sample image embedded using HTML5.</figcaption>
+    </figure>
+
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="400">
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Section: Form -->
+  <main>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="^\+?[0-9]{10,15}$" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="4"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a secure password" required minlength="6"><br><br>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required minlength="6"><br><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" value="Kenya" readonly><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <p>Choose your interests:</p>
+        <input type="checkbox" id="tech" name="interests" value="tech">
+        <label for="tech">Technology</label><br>
+
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br>
+
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br><br>
+
+        <p>Subscribe to newsletter:</p>
+        <input type="radio" id="yes" name="newsletter" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="newsletter" value="no">
+        <label for="no">No</label><br><br>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
 
